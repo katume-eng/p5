@@ -10,23 +10,9 @@ let num_dot = wedth / wedth_dot * height / height_dot;
 
 
 function setup() {
-    for( let i=0; i<1201; i+=60){
-        for(let j=0; j<1201; j+=60){
-            dot,puhs({
-                x:i,
-                y:j,
-            })
-        }
-    }
 }
 
-function fraw(){
-    craeteCanvas(600,600);
-    background(255);
-
-    for(let i=0;i<num_wedth_dot;i++){
-        for(let j=0;j<num_height_dot;j++){
-            
-        }
-    }
+function draw(){
+    createCanvas(600,600);
+    background(100);
 }

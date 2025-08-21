@@ -2,6 +2,7 @@ function setup() {
   createCanvas(600, 600, WEBGL);
   noStroke();
   pointLight(255, 255, 255, 200, -200, 200); // RGB, x, y, z
+  frameRate(10);
 
 }
 
