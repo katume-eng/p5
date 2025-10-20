@@ -1,6 +1,3 @@
-// here is p5js code
-
-
 function setup() {
     createCanvas(400, 400);
 }

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title>p5.js Sketch</title>
+  <meta charset="UTF-8">
+  <title>p5.js Viewer</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="loader.js" defer></script>
+  <!-- loader.jsを非同期で読み込む -->
 </head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
-    <script src="main.js"></script>
+<body style="margin:0;overflow:hidden;background:#fcfcfc;">
 </body>
 </html>
+
+<!--
+    vscodeで実行するときは npx http-server でサーバーを立ててから
+    http://localhost:8080/index.html?sketch= にアクセス.
+-->
