@@ -1,5 +1,5 @@
 let block = [];
-let width=400,height=400;
+let width=1000,height=1000;
 let block_size = 20;
 let num_block = width/block_size;
 let time;
