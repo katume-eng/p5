@@ -29,7 +29,7 @@ class Tile{
         let phasex = this.x*0.03;
         let phasey = this.y*0.005;
         let multi = phasex*phasey*0.1;
-        this.size = block_size*sin((TWO_PI*t-multi-phasey));
+        this.size = block_size*abs(sin((TWO_PI*t*0.7-multi-phasey)));
     }
 }
 
@@ -56,7 +56,7 @@ function draw() {
     tile.forEach(function(t){
         //console.log(t);
         t.r_update(time);
-        t.display(t);
+        t.display();
     })
 
 }
