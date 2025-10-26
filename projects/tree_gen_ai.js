@@ -13,22 +13,22 @@ let growing = true; // 成長フラグ
 
 // パラメータ（必要ならここだけ調整）
 const PARAM = {
-  seed: 20251025,       // 乱数シード（固定で毎回似る）
+  seed: 20251026,       // 乱数シード（固定で毎回似る）
   stepsPerFrame: 90,    // 1フレームで何ステップ進めるか（描画高速化）
-  baseStep: 1.6,        // 先端が進むベース距離
+  baseStep: 3.6,        // 先端が進むベース距離
   jitter: 0.22,         // 微妙な揺れ（ラジアン）
-  branchChance: 0.08,   // 分岐確率
+  branchChance: 0.07,   // 分岐確率
   branchAngle: 0.35,    // 分岐角度の基準
-  thickStart: 9.0,      // 幹の太さ
+  thickStart: 20.0,      // 幹の太さ
   thickDecay: 0.992,    // 太さ減衰率（1に近いほどゆっくり）
   minThick: 0.35,       // 停止閾値
   bleed: 0.22,          // にじみの強さ（0〜1）
-  poolChance: 0.2,      // 節でインク溜まり
+  poolChance: 0.1,      // 節でインク溜まり
   maxTips: 520,         // 成長点の最大数
   groundMargin: 60,     // 画面下の余白
   windScale: 0.0035,    // ノイズ風のスケール
   windStrength: 0.7,    // 風の強さ
-  paperScale: 0.0025    // 和紙ノイズのスケール
+  paperScale: 0.25    // 和紙ノイズのスケール
 };
 
 function setup(){
