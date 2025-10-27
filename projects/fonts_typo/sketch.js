@@ -15,5 +15,9 @@ function setup() {
 
 function draw() {
     background(205);
+    textFont(font);
+    textSize(32);
+    textAlign(CENTER, CENTER);
+    text("hello p5.js!", width / 2, height / 2);
     // Your drawing code here
 }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>p5.js Font Example</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+<script>
+  let myFont;
+
+  function preload() {
+    // フォントファイルを読み込む
+    myFont = loadFont('fonts/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf');
+  }
+
+  function setup() {
+    createCanvas(windowWidth, windowHeight);
+    textFont(myFont);
+    textSize(64);
+    textAlign(CENTER, CENTER);
+    text("hello p5.js!", width / 2, height / 2);
+    textAlign(CENTER, CENTER);
+    text("WTF", width / 2, height / 2 + 100);
+  }
+</script>
+</body>
+</html>
